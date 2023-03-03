@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background-color: #eee;
+}
+.position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.circle {
+    width: 2rem;
+    height: 2rem;
+    background-color: crimson;
+    border-radius: 50%;
+    z-index: 2;
+}
+.card {
+    width: 12rem;
+    height: 12rem;
+    background-color: #e0e0e0;
+    border: .2rem solid white;
+    background: linear-gradient(to right, #eee,white,#eee);
+    /* هنا هشيل الجزء بتاع البوزيشن ده وهحط الكلاس بتاع البوزيشن في الكاردس */
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    transform: translate(-50%, -50%) rotate(45deg);
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .content {
+    transform: rotate(-45deg);
+}
+.first {
+    left: calc(50% + 9rem);
+}
+
+.second {
+    left: calc(50% - 9rem);
+}
+.third {
+    top: calc(50% - 9rem);
+}
+.fourth {
+    top: calc(50% + 9rem);
+}
+.first i {
+    color: blue;
+}
+.second i {
+    color: red;
+}
